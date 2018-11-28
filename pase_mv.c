@@ -67,7 +67,6 @@ PASE_Int PASE_ParCSRMatrixCreate( MPI_Comm comm ,
    (*matrix)->aux_hH = hypre_CTAlloc(HYPRE_ParVector, block_size);
    (*matrix)->diag = 0;
 
-
    PASE_Int *partitioning;
    partitioning = hypre_ParVectorPartitioning(workspace_H);
    /* 创建并行向量 */
